@@ -6,9 +6,9 @@ import foto3 from '../assets/images/foto3.jpeg';
 // 1. Konfigurasi Kunci Akses (Auth)
 export const AUTH_CONFIG = {
     // Nama yang harus diketik pacarmu untuk masuk (case-insensitive)
-    KEYPASS_NAME: "peby", 
+    KEYPASS_NAME: "FEBY YUANGGI PUTRI", 
     // Opsi: Bisa kamu tambahkan tanggal jadian jika ingin sistem dua kunci
-    KEYPASS_DATE: "1510", 
+    KEYPASS_DATE: "180206", 
 };
 
 // 2. Data Pesan Personal
