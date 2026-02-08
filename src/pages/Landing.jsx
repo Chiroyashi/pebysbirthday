@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Stars, Calendar, MapPin } from 'lucide-react';
 import { PERSONAL_MESSAGES, GALLERY_DATA, TIMELINE_DATA } from '../utils/constants';
-import MusicPlayer from '../components/MusicPlayer';
+import MusicPlayer from '../components/MusicPlayers';
 import HeartEffect from '../components/HeartEffect';
 
 const Landing = () => {

@@ -1,7 +1,7 @@
 // 1. Import foto-foto terlebih dahulu agar dikenali oleh Vite
-import foto1 from '../assets/images/foto1.jpg';
-import foto2 from '../assets/images/foto2.jpg';
-import foto3 from '../assets/images/foto3.jpg';
+import foto1 from '../assets/images/foto1.jpeg';
+import foto2 from '../assets/images/foto2.jpeg';
+import foto3 from '../assets/images/foto3.jpeg';
 
 // 1. Konfigurasi Kunci Akses (Auth)
 export const AUTH_CONFIG = {
