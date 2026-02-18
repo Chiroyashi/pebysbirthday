@@ -19,7 +19,7 @@ const Login = ({ onLoginSuccess }) => {
       });
       setTimeout(() => onLoginSuccess(), 1500);
     } else {
-      setError('Kuncinya salah, coba ingat lagi panggilan kesayangan..');
+      setError('Wle ga boleh curang yaa! harus pap duluu');
     }
   };
 
@@ -32,14 +32,15 @@ const Login = ({ onLoginSuccess }) => {
       >
         <Heart className="mx-auto text-pink-500 mb-4 animate-pulse" fill="currentColor" size={48} />
         <h1 className="text-2xl font-bold text-gray-800 mb-2">{PERSONAL_MESSAGES.LOGIN_TITLE}</h1>
-        <p className="text-gray-500 mb-6 text-sm">{PERSONAL_MESSAGES.LOGIN_SUBTITLE}</p>
+        <p className="text-gray-500 mb-2 text-sm">{PERSONAL_MESSAGES.LOGIN_SUBTITLE}</p>
+        <p className="text-gray-500 mb-4 text-sm">{PERSONAL_MESSAGES.LOGIN_SUBTITLES}</p>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Siapa namamu?"
+            placeholder="Mau passwordnya? kirim pap duluu😘"
             className="w-full px-4 py-3 rounded-xl border border-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-400 text-center transition-all"
           />
           {error && <p className="text-red-400 text-xs italic">{error}</p>}

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Music, Music2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -6,11 +6,16 @@ const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
+  // Mengambil '/pebysbirthday/' secara otomatis dari config vite
+  const baseUrl = import.meta.env.BASE_URL;
+
   const togglePlay = () => {
     if (isPlaying) {
       audioRef.current.pause();
     } else {
-      audioRef.current.play();
+      audioRef.current.play().catch((err) => {
+        console.error("Playback gagal:", err);
+      });
     }
     setIsPlaying(!isPlaying);
   };
@@ -18,7 +23,8 @@ const MusicPlayer = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <audio ref={audioRef} loop>
-        <source src="/music/music1.mp3" type="audio/mpeg" />
+        {/* Path disesuaikan menggunakan baseUrl */}
+        <source src={`${baseUrl}music/music1.mp3`} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
